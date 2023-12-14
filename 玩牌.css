@@ -1,0 +1,94 @@
+.wanpai{
+    width: 240px;
+    height: 260px;
+    margin: 0px auto;
+    position: relative;
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+
+.wanpai1,.wanpai2,.wanpai3,.wanpai4,.wanpai5,.wanpai6,.wanpai7,.wanpai8,.wanpai9,.wanpai10,.wanpai11
+,.wanpai12,.wanpai13,.wanpai14,.wanpai15,.wanpai16,.wanpai17,.wanpai18 {
+    width: 100%;
+    transition: all 1.5s;
+    position: absolute;     /* 既然扑克牌是叠在一起的，那就都用绝对定位 */
+    left: 0;
+    top: 0;
+
+    transform-origin: center bottom; /*旋转时，以盒子底部的中心为坐标原点*/
+    box-shadow: 0 0 3px 0 #666;
+}
+
+/* transform(位置) : rotate(旋转) deg角度 */
+.wanpai:hover .wanpai9{
+    transform: rotate(-10deg);
+}
+.wanpai:hover .wanpai8{
+    transform: rotate(-30deg);
+}
+.wanpai:hover .wanpai7{
+    transform: rotate(-50deg);
+}
+.wanpai:hover .wanpai6 {
+    transform: rotate(-70deg);
+}
+
+.wanpai:hover .wanpai5 {
+    transform: rotate(-90deg);
+}
+
+.wanpai:hover .wanpai4 {
+    transform: rotate(-110deg);
+} 
+
+.wanpai:hover .wanpai3{
+    transform: rotate(-130deg);
+}
+
+.wanpai:hover .wanpai2 {
+    transform: rotate(-150deg);
+}
+
+.wanpai:hover .wanpai1 {
+    transform: rotate(-170deg);
+}
+
+.wanpai:hover .wanpai10 {
+    transform: rotate(10deg);
+}
+
+.wanpai:hover .wanpai11 {
+    transform: rotate(30deg);
+}
+
+.wanpai:hover .wanpai12 {
+    transform: rotate(50deg);
+}
+
+.wanpai:hover .wanpai13 {
+    transform: rotate(70deg);
+}
+
+.wanpai:hover .wanpai14{
+    transform: rotate(90deg);
+}
+
+.wanpai:hover .wanpai15 {
+    transform: rotate(110deg);
+}
+.wanpai:hover .wanpai16 {
+    transform: rotate(130deg);
+}
+.wanpai:hover .wanpai17 {
+    transform: rotate(150deg);
+}
+.wanpai:hover .wanpai18 {
+    transform: rotate(170deg);
+}
+
+body{
+    font-family: monospace;
+    font-weight: 600;
+    /* 等宽平方简体中文 */
+}

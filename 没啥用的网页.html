@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        .wanpai{
+            width: 240px;
+            /* height: 260px; */
+            margin: 160px auto;
+            position: relative;
+        }
+        ::-webkit-scrollbar {
+            display: none; /* Chrome Safari */
+        }
+
+        .wanpai1,.wanpai2,.wanpai3,.wanpai4,.wanpai5,.wanpai6,.wanpai7,.wanpai8,.wanpai9,.wanpai10,.wanpai11
+        ,.wanpai12,.wanpai13,.wanpai14,.wanpai15,.wanpai16,.wanpai17,.wanpai18 {
+            width: 90%;
+            transition: all 1.5s;
+            position: absolute;     /* 既然扑克牌是叠在一起的，那就都用绝对定位 */
+            left: 0;
+            top: 0;
+
+            transform-origin: center bottom; /*旋转时，以盒子底部的中心为坐标原点*/
+            box-shadow: 0 0 3px 0 #666;
+        }
+
+        /* transform(位置) : rotate(旋转) deg角度 */
+        .wanpai:hover .wanpai9{
+            transform: rotate(-10deg);
+       }
+       .wanpai:hover .wanpai8{
+            transform: rotate(-30deg);
+       }
+        .wanpai:hover .wanpai7{
+            transform: rotate(-50deg);
+       }
+        .wanpai:hover .wanpai6 {
+            transform: rotate(-70deg);
+        }
+
+        .wanpai:hover .wanpai5 {
+            transform: rotate(-90deg);
+        }
+
+        .wanpai:hover .wanpai4 {
+            transform: rotate(-110deg);
+        } 
+
+        .wanpai:hover .wanpai3{
+            transform: rotate(-130deg);
+        }
+
+        .wanpai:hover .wanpai2 {
+            transform: rotate(-150deg);
+        }
+
+        .wanpai:hover .wanpai1 {
+            transform: rotate(-170deg);
+        }
+
+        .wanpai:hover .wanpai10 {
+            transform: rotate(10deg);
+        }
+
+        .wanpai:hover .wanpai11 {
+            transform: rotate(30deg);
+        }
+
+        .wanpai:hover .wanpai12 {
+            transform: rotate(50deg);
+        }
+
+        .wanpai:hover .wanpai13 {
+            transform: rotate(70deg);
+        }
+
+        .wanpai:hover .wanpai14{
+            transform: rotate(90deg);
+        }
+
+        .wanpai:hover .wanpai15 {
+            transform: rotate(110deg);
+        }
+        .wanpai:hover .wanpai16 {
+            transform: rotate(130deg);
+        }
+        .wanpai:hover .wanpai17 {
+            transform: rotate(150deg);
+        }
+        .wanpai:hover .wanpai18 {
+            transform: rotate(170deg);
+        }
+    </style>
+</head>
+<body>
+<div class="wanpai">
+    <img class="wanpai1" src="/wepb/0.webp"/>
+    <img class="wanpai2" src="/wepb/1.webp"/>
+    <img class="wanpai3" src="/wepb/2.webp"/>
+    <img class="wanpai4" src="/wepb/3.webp"/>
+    <img class="wanpai5" src="/wepb/4.webp"/>
+    <img class="wanpai6" src="/wepb/5.webp"/>
+    <img class="wanpai7"src="/wepb/6.webp"/>
+    <img class="wanpai8"src="/wepb/7.webp"/>
+    <img class="wanpai9"src="/wepb/8.webp"/>
+    <img class="wanpai10"src="/wepb/9.webp"/>
+    <img class="wanpai11"src="/wepb/10.webp"/>
+    <img class="wanpai12"src="/wepb/11.webp"/>
+    <img class="wanpai13"src="/wepb/12.webp" alt="">
+    <img class="wanpai14"src="wepb/13.webp" alt="">
+    <img class="wanpai15"src="wepb/14.webp" alt="">
+    <img class="wanpai16"src="wepb/15.webp" alt="">
+    <img class="wanpai17"src="wepb/16.webp" alt="">
+    <img class="wanpai18"src="wepb/17.webp" alt="">
+    <img class="wanpai19"src="wepb/18.webp" alt="">
+</div>
+</body>
+</html>

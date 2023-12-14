@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/帮助文档.css">
+    <link rel="shortcut icon" href="/img/网页图标.ico">
+    <meta
+    name="description"
+    content="Omnifood is an AI-powered food subscript"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="" href="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/css/APlayer.min.css">
+    <script src="/js/APlayer.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>帮助页面</title>
+    <!-- 快捷键播放 -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="px-3 py-2 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="http://127.0.0.1:5500/之前敲的代码/网站介绍.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <img src="/img/顾客.png" class="bi me-2" width="40" height="" role="img" />
+            </a>
+<!-- 下面的class加nav-tabs有白色下划线  -->
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-justified">
+              
+              <li>
+                <a href="http://127.0.0.1:5500/之前敲的代码/网站介绍.html" class="btn  nav-link text-white btn-dark" accesskey="1">
+                  <img src="/img/主页.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  主页
+                </a>
+                </button>
+              </li>
+              
+              <li>
+                <a href="http://127.0.0.1:5500/音乐测试页面.html" class="btn  nav-link text-white btn-dark" accesskey="2">
+                  <img src="/img/音乐.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  音乐
+                </a>
+              </li>
+              
+              <li>
+<!-- data-bs-toggle="tooltip" data-bs-placement="bottom" title="视频界面" 可加提示框 放class里面 -->
+                <a  href="http://127.0.0.1:5500/视频测试页面.html" class="btn  nav-link text-white btn-dark" accesskey="3">
+                  <img src="/img/上传视频_爱给网_aigei_com.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  视频
+                </a>
+              </li>
+
+              <li>
+                <a href="http://127.0.0.1:5500/帮助页面.html" class="btn  nav-link text-white btn-dark" accesskey="4">
+                  <img  src="/img/帮助.png"  class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  帮助
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+</main>
+
+<!-- 新搜索栏 -->
+<div id="search" class="container mt-3"></div>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search" });
+  });
+</script>
+
+<!-- 页面布局 -->
+      <div class="container mt-3">
+        <h1 class="text-center">帮助文档</h1>
+         
+        <div id="accordion">
+              <div class="card">
+                  <div class="card-header ">
+                      <a class="btn btn-outline-secondary" data-bs-toggle="collapse" href="#collapseOne">
+                      快捷键说明
+                      </a>
+                  </div>
+                  <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body  bg-light">
+                      <kbd >Alt+1/2/3/4</kbd> 可帮你快速在
+                      <b>[主页]</b>/<b>[音乐]</b>/<b>[视频]</b>/<b>[帮助]</b>间跳转。<br>
+                      <br>
+                      <mark>注：数字1234为Alt上方的数字键，即主键盘区的数字键</mark>
+                      <br>
+                      <p>下方为不同浏览器，不同操作系统的快捷方式</p>
+              <div class="table-responsive">
+                      <table class="table table-light">
+                        <thead>
+                          <tr>
+                            <th>浏览器</th>
+                            <th>Windows</th>
+                            <th>Linux</th>
+                            <th>Mac</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                      <tr class="table-warning">
+                        <td>Internet Explorer</td>
+                        <td>[Alt] + 1/2/3/4</td>
+                        <td>N/A</td>
+                        <td></td>
+                      </tr>
+                      <tr class="table-warning">
+                        <td>Chrome</td>
+                        <td>[Alt] + 1/2/3/4</td>
+                        <td>[Alt] + 1/2/3/4</td>
+                        <td>[Control] [Alt] + 1/2/3/4</td>
+                      </tr>
+                      <tr class="table-warning">
+                        <td>Firefox</td>
+                        <td>[Alt] [Shift] + 1/2/3/4</td>
+                        <td>[Alt] [Shift] + 1/2/3/4</td>
+                        <td>[Control] [Alt] + 1/2/3/4</td>
+                      </tr>
+                      <tr class="table-warning">
+                        <td>Safari</td>
+                        <td>[Alt] + 1/2/3/4</td>
+                        <td>N/A</td>
+                        <td>[Control] [Alt] + 1/2/3/4</td>
+                      </tr>
+          </tbody>
+          </table>
+        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="card ">
+                  <div class="card-header">
+                      <a class="collapsed btn btn-outline-secondary" data-bs-toggle="collapse" href="#collapseTwo">
+                      使用说明2
+                  </a>
+                  </div>
+                   <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        测试文字
+                      </div>
+                  </div>
+              </div>
+              <div class="card ">
+                  <div class="card-header">
+                      <a class="collapsed btn btn-outline-secondary" data-bs-toggle="collapse" href="#collapseThree">
+                      使用说明3
+                      </a>
+                  </div>
+                  <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                      <div class="card-body">
+                        测试文字
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+
+<!-- 音乐播放器 -->
+<div id="aplayer" ></div>
+<script class="container">
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,                //是否附着页面底部，否为false
+      autoplay: false,             //是否自动播放，否为false,移动端不能生效
+      volume: 0.6,                //初始音量（0~1）
+      lrcType: 3,                 //歌词模式（1、HTML模式 2、js模式 3、lrc文件模式）
+      mutex: true,                //互斥模式：阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
+      order: 'list',            //音频循环顺序（'list'：顺序, 'random'：随机）
+      preload: 'auto',            //预加载（'none'：不预加载, 'metadata'：元数据, 'auto'：自动）
+      listFolded: true,          //列表默认折叠，开启为true
+      theme: '#333',           //主题颜色
+      audio: [
+      {
+        name: '『ユイカ』 - 17さいのうた。',           //歌曲名称，这里得做个读取函数
+          artist: '『ユイカ』',       //歌曲作者，这里得做个读取函数
+          url: 'music/『ユイカ』 - 17さいのうた。.flac',         //歌曲源文件地址
+          cover: 'http://p1.music.126.net/1bcwLzrrKPWcs137biKbpw==/109951167488734005.jpg?param=130y130',     //歌曲封面地址
+          lrc:  'singtxt/17さいのうた。 - 『ユイカ』.lrc',        //歌曲的歌词文件
+          theme: '#eeeeee'        //主题颜色（优先）
+   },{
+          name: 'Dacapo',           //歌曲名称，这里得做个读取函数
+          artist: 'HOYO-MiX',       //歌曲作者，这里得做个读取函数
+          url: '/music/Da Capo.flac',         //歌曲源文件地址
+          cover: 'http://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg?param=130y130',     //歌曲封面地址
+          lrc:  'singtxt/Da Capo - HOYO-MiX.lrc',        //歌曲的歌词文件
+          theme: '#eeeeee'        //主题颜色（优先）
+      },
+      {
+        name: '祝福',           //歌曲名称，这里得做个读取函数
+          artist: 'YOASOBI',       //歌曲作者，这里得做个读取函数
+          url: 'music/01.祝福.flac',         //歌曲源文件地址
+          cover: 'https://y.qq.com/music/photo_new/T002R800x800M0000021clhD02ns8a_1.jpg',     //歌曲封面地址
+          lrc:  'singtxt/祝福 - YOASOBI.lrc',        //歌曲的歌词文件
+          theme: '#eeeeee'        //主题颜色（优先）
+   } ,
+      {
+        name: 'TruE',           //歌曲名称，这里得做个读取函数
+          artist: '黄龄/HOYO-MiX',       //歌曲作者，这里得做个读取函数
+          url: 'music/黄龄,HOYO-MiX - TruE.mp3',         //歌曲源文件地址
+          cover: 'http://p2.music.126.net/cu9T_JCh5mt3aipWJoy03w==/109951167767293721.jpg?param=130y130',     //歌曲封面地址
+          lrc:  'singtxt/TruE - 黄龄,HOYO-MiX.lrc',        //歌曲的歌词文件
+          theme: '#eeeeee'        //主题颜色（优先） 
+      },
+      {
+        name: 'Regression',           //歌曲名称，这里得做个读取函数
+          artist: '阿云嘎/HOYO-MiX',       //歌曲作者，这里得做个读取函数
+          url: 'music/阿云嘎,HOYO-MiX - Regression.mp3',         //歌曲源文件地址
+          cover: 'http://p2.music.126.net/DbD08enxZN2kDFScDFxcdQ==/109951166957048928.jpg?param=130y130',     //歌曲封面地址
+          lrc:  'singtxt/Regression - 阿云嘎,HOYO-MiX.lrc',        //歌曲的歌词文件
+          theme: '#eeeeee'        //主题颜色（优先） 
+      },
+      {
+        name: 'One Last Kiss',           //歌曲名称，这里得做个读取函数
+          artist: '宇多田光',       //歌曲作者，这里得做个读取函数
+          url: 'music/one last  kiss.mp3',         //歌曲源文件地址
+          cover: 'http://p1.music.126.net/l3G4LigZnOxFE9lB4bz_LQ==/109951165791860501.jpg?param=130y130',     //歌曲封面地址
+          lrc:  'singtxt/One Last Kiss - 宇多田光.lrc',        //歌曲的歌词文件
+          theme: '#eeeeee'        //主题颜色（优先） 
+      },
+        ]
+  });
+</script>
+
+</body>
+</html>

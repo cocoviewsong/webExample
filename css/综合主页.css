@@ -1,0 +1,32 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.zhuye{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.shijian{
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+#search{
+    border-radius: 12px;
+}
+
+.wenzi1{
+    font-size: 30px;
+}
+
+.footer{
+    display: block;
+    margin-top: 250px;
+}
+
+.wanpai18{
+    z-index: 1 !important;
+}

@@ -1,0 +1,10 @@
+span {
+    /* 让弹出来的文字不被选中，影响操作体验 */
+    user-select: none;
+    cursor: default;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    transition: 1s;
+    font-family: cursive;
+}

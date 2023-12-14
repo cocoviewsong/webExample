@@ -1,0 +1,283 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: #f1f3f5;
+  box-sizing: border-box;
+}
+
+main {
+  font-weight: 600;
+}
+
+.sousuo {
+  border-radius: 6px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.gedantuijian {
+  display: inline-block;
+  line-height: 30px;
+  background-color: red;
+  text-decoration: none;
+  /* 行高 */
+}
+.newgedan {
+  display: inline-block;
+  background-color: red;
+  line-height: 10px;
+  padding: 10px;
+  background-color: red;
+  text-decoration: none;
+}
+
+.aaa1 {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.aaa2 {
+  text-align: end;
+  display: inline;
+  position: relative;
+  float: right;
+  text-decoration: none;
+}
+
+.aaa11 {
+  display: inline-block;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  /* background-color: red; */
+}
+
+.aaa22 {
+  text-align: end;
+  display: inline;
+  position: relative;
+  /* float: right; */
+  /* vertical-align: bottom; */
+  /* background-color: red; */
+}
+
+/* 歌曲搜索结果样式 */
+#sing-tr {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#gequbiaoge {
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  text-align: left;
+  /* color: white; */
+  overflow-x: auto;
+}
+#sing-gequname {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#sing-geshou {
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* color: red; */
+}
+
+#bofanganniu {
+  position: relative;
+  background-color: orangered;
+  border: none;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 20px;
+  width: 130px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+#bofanganniu:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#bofanganniu:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+/* 按钮点击时，取消隐藏类 */
+.display-button {
+  display: none;
+}
+
+/* 移动UI位置 */
+
+/* 新歌首发 */
+.tab {
+  overflow: hidden;
+  padding-left: 360px;
+  margin-bottom: 39px;
+}
+.tab a {
+  font-size: 14px;
+  line-height: 22px;
+  float: left;
+  margin-right: 52px;
+}
+.song_list {
+  overflow: hidden;
+}
+.song_list li {
+  padding: 12px 0px;
+  overflow: hidden;
+  border-bottom: 1px solid #f2f2f2;
+  width: 380px;
+  float: left;
+  margin-right: 30px;
+}
+.song_list .nomargin {
+  margin-right: 0px;
+}
+.pic,
+.txt,
+.time {
+  float: left;
+}
+.pic {
+  width: 86px;
+  height: 86px;
+}
+.pic img {
+  width: 86px;
+  height: 86px;
+}
+.txt {
+  padding: 19px 0px 17px 0px;
+  width: 200px;
+  margin: 0px 38px 0px 14px;
+}
+.txt h3 {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.txt p {
+  font-size: 14px;
+  line-height: 25px;
+}
+.txt p a {
+  color: #999;
+}
+.time {
+  font-size: 14px;
+  color: #999;
+  line-height: 86px;
+}
+
+/* 排行榜 */
+.rank_list {
+  overflow: hidden;
+}
+.list_item {
+  width: 164px;
+  height: 430px;
+  margin-right: 20px;
+  float: left;
+  background-color: #444;
+  /* background: url(../img/rankback.jpg) no-repeat; */
+  padding: 70px 30px 0px;
+}
+.two {
+  background-position: -224px 0px;
+}
+.three {
+  background-position: -448px 0px;
+}
+.four {
+  background-position: -672px 0px;
+}
+.five {
+  background-position: -896px 0px;
+}
+.rank_list .nomargin {
+  margin-right: 0px;
+}
+.list_item h3 {
+  font-size: 26px;
+  line-height: 58px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+.list_item i {
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: #fff;
+  margin: 32px auto;
+}
+.item_del li {
+  font-size: 13px;
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.item_del .num {
+  line-height: 29px;
+  float: left;
+  width: 20px;
+}
+.item_del .del_stxt {
+  float: left;
+  width: 144px;
+}
+.del_stxt p {
+  line-height: 29px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.del_stxt p a {
+  color: #fff;
+}
+.del_stxt p a:hover {
+  color: #fff;
+}
+
+/* 应用样式 */
+.u-margin-top {
+  margin-top: 7rem;
+}
+
+/* 新歌首发 */
+a {
+  text-decoration: none;
+}

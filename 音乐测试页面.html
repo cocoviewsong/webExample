@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/img/网页图标.ico" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/音乐测试页面.css" rel="stylesheet" />
+    <script async src="js/bootstrap.bundle.min.js"></script>
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script
+      async
+      src="/pagefind/pagefind-ui.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="/css/APlayer.min.css" />
+    <script async src="/js/APlayer.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" href="草稿5.css"> -->
+    <script async src="js/pace.min.js"></script>
+    <link rel="stylesheet" href="css/pace-theme-default.min.css" />
+    <script
+      async
+      src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"
+    ></script>
+    <title>音乐界面</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <div class="px-3 py-2 bg-dark text-white">
+          <div class="container">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+            >
+              <a
+                href="http://127.0.0.1:5500/之前敲的代码/网站介绍.html"
+                class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
+              >
+                <img
+                  src="/img/顾客.png"
+                  class="bi me-2"
+                  width="40"
+                  height=""
+                  role="img"
+                />
+              </a>
+              <!-- 下面的class加nav-tabs有白色下划线  -->
+              <ul
+                class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-justified"
+              >
+                <li>
+                  <a
+                    href="http://127.0.0.1:5500/之前敲的代码/网站介绍.html"
+                    class="btn nav-link text-white btn-dark"
+                    accesskey="1"
+                  >
+                    <img
+                      src="/img/主页.png"
+                      class="bi d-block mx-auto mb-1"
+                      width="24"
+                      height="24"
+                    />
+                    主页
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="http://127.0.0.1:5500/音乐测试页面.html"
+                    class="btn nav-link text-white btn-dark"
+                    accesskey="2"
+                  >
+                    <img
+                      src="/img/音乐.png"
+                      class="bi d-block mx-auto mb-1"
+                      width="24"
+                      height="24"
+                    />
+                    音乐
+                  </a>
+                </li>
+
+                <li>
+                  <!-- data-bs-toggle="tooltip" data-bs-placement="bottom" title="视频界面" 可加提示框 放class里面 -->
+                  <a
+                    href="http://127.0.0.1:5500/视频测试页面.html"
+                    class="btn nav-link text-white btn-dark"
+                    accesskey="3"
+                  >
+                    <img
+                      src="/img/上传视频_爱给网_aigei_com.png"
+                      class="bi d-block mx-auto mb-1"
+                      width="24"
+                      height="24"
+                    />
+                    视频
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="http://127.0.0.1:5500/帮助页面.html"
+                    class="btn nav-link text-white btn-dark"
+                    accesskey="4"
+                  >
+                    <img
+                      src="/img/帮助.png"
+                      class="bi d-block mx-auto mb-1"
+                      width="24"
+                      height="24"
+                    />
+                    帮助
+                  </a>
+                </li>
+
+                <li class="mt-3">
+                  <input id="sing-search" type="text" placeholder="搜索" />
+                </li>
+
+                <li>
+                  <button
+                    id="btn__Search"
+                    onclick="searchSong()"
+                    class="sousuo m-3"
+                  >
+                    搜索
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+
+    <!-- 搜索图标 -->
+    <div id="search" class="container mt-3"></div>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        new PagefindUI({ element: "#search" });
+      });
+    </script>
+
+    <!-- 轮播 -->
+    <div
+      id="demo"
+      class="container mt-3 carousel slide col-9"
+      data-bs-ride="carousel"
+    >
+      <!-- 指示符 -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="4"
+        ></button>
+      </div>
+      <!-- 轮播歌曲背景图 -->
+      <div class="carousel-inner d-block mx-auto">
+        <!-- 第一张歌曲背景图 -->
+        <div class="carousel-item active">
+          <img
+            src="http://p1.music.126.net/q2pSd_ADUhiXWslYicTXrw==/109951169037805860.jpg?imageView&quality=89"
+            alt="Shanghai"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+        <!-- 第二张歌曲背景图 -->
+        <div class="carousel-item">
+          <img
+            src="http://p1.music.126.net/OKA0xfWpTAEpBtxMuxe2_Q==/109951169037771419.jpg?imageView&quality=89"
+            alt="Beijing"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+        <!-- 第三张歌曲背景图 -->
+        <div class="carousel-item">
+          <img
+            src="http://p1.music.126.net/YCcpVTu41-DIAdOVMgUkHA==/109951169036448111.jpg?imageView&quality=89"
+            alt="Wuhan"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+        <!-- 第四张歌曲背景图 -->
+        <div class="carousel-item">
+          <img
+            src="http://p1.music.126.net/brbyQp3vb820kspaeEC5Ng==/109951169036670318.jpg?imageView&quality=89"
+            alt="Wuhan"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+        <!-- 第五张歌曲背景图 -->
+        <div class="carousel-item">
+          <img
+            src="http://p1.music.126.net/HBmI8r0C5AIPL-RoVW5m1Q==/109951169036447014.jpg?imageView&quality=89"
+            alt="Wuhan"
+            class="d-block mx-auto"
+            style="width: 100%"
+          />
+          <div class="carousel-caption">
+            <p></p>
+          </div>
+        </div>
+        <!-- 轮播歌曲背景图结束的div -->
+      </div>
+      <!-- 左右控件 -->
+      <button
+        id="kongjianleft"
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span id="kongjianleft" class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        id="kongjianright"
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span id="kongjianright" class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- 这是初始歌单 -->
+    <div id="huanyipi" class="container mt-3">
+      <!-- 不清不楚的代码 下面不行换这个 -->
+      <!-- <h3  class="text-center">歌单推荐</h3>
+<div class="text-center btn-group ">
+  <button type="button" class="gedantuijian btn btn-link" disabled>歌单推荐
+  <button class="btn btn-outline-secondary newgedan" type="button" @click="xiaoshi">换一批</button>
+</button> 
+</div> -->
+
+      <!-- 诡异的几行，暂且用这个 -->
+      <!-- <div class="container mt-3">
+  <p class="btn btn-outline-light text-dark aaa2" @click="xiaoshi" disabled>换一批</p>
+  <p class="btn aaa1" disabled>歌单推荐</p>
+</div> -->
+
+      <div id="gedanneirong" class="container mt-3">
+        <a class="btn-link text-dark aaa11 u-margin-top" disabled>歌单推荐</a>
+        <!-- <button
+          class="btn btn-outline-secondary text-dark aaa22"
+          @click="xiaoshi"
+        >
+          换一批
+        </button> -->
+      </div>
+
+      <!-- 初始歌单详情 -->
+      <div class="container" v-if="showMessage">
+        <div class="row">
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/A514bNqtuivvuppEiXkibQ==/1407374889022377.jpg?param=200y200"
+              />
+              <p class="container text-center mt-2 text-dark">
+                童话风电子｜异世界环游，糖果与幻想
+              </p>
+            </a>
+          </div>
+
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none text-dark"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/Y2nqa5UA22IQzoOX6cWIpg==/109951164395932097.jpg?param=200y200"
+              />
+              <p class="container text-center mt-2">
+                『四夜人』YOASOBI、真夜中、ヨルシカ、あたらよ
+              </p>
+            </a>
+          </div>
+
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none text-dark"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/MKjAy3R1OxMKtpqLe5lDHA==/5957153999383510.jpg?param=200y200"
+              />
+              <p class="text-center mt-2">物哀纯音丨花开于彼岸 魂落于忘川</p>
+            </a>
+          </div>
+
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none text-dark"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/P_CPl0PsdbYkDxxA7KC4_A==/109951166172055304.jpg?param=200y200"
+              />
+              <p class="text-center mt-2">東方抒情集：一梦华胥 永眠不散之宴</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 这里更换后的歌单 -->
+      <div class="container" v-else>
+        <div class="row">
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/8tX2wAS4R4hNKKn_445xqQ==/109951166145983724.jpg?param=200y200"
+              />
+              <p class="container text-center mt-2 text-dark">
+                今天从《恋文》听起|私人雷达
+              </p>
+            </a>
+          </div>
+
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/vooe4WE0lNgH1Z3CS8rBlg==/109951168636658829.jpg?param=200y200"
+              />
+              <p class="container text-center mt-2 text-dark">
+                不熄灯教室 | 柔美钢琴曲 学习好拍档
+              </p>
+            </a>
+          </div>
+
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/deOawP0TcGe62Ve_RoQZPA==/109951166085687441.jpg?param=200y200"
+              />
+              <p class="container text-center mt-2 text-dark">
+                来场秋游吧 | 初秋的风和古典乐吹散烦恼
+              </p>
+            </a>
+          </div>
+
+          <div class="col-sm-3">
+            <a
+              href="http://127.0.0.1:5500/MUSIC测试.html"
+              class="text-decoration-none"
+            >
+              <img
+                id="chicun"
+                class="container align-items-center"
+                src="https://p1.music.126.net/3u_DA1vZ-lstf4pYVBXSrg==/3295236349350120.jpg?param=200y200"
+              />
+              <p class="container text-center mt-2 text-dark">
+                从《Comet》开启宝藏音乐环游|宝藏雷达
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 这个是vue的结束 -->
+    </div>
+
+    <!-- 这里是音乐播放器 -->
+    <div id="aplayer" class="container mt-3"></div>
+    <script class="container mt-3">
+      const ap = new APlayer({
+        container: document.getElementById("aplayer"),
+        fixed: true, //是否附着页面底部，否为false
+        autoplay: false, //是否自动播放，否为false,移动端不能生效
+        volume: 0.6, //初始音量（0~1）
+        lrcType: 3, //歌词模式（1、HTML模式 2、js模式 3、lrc文件模式）
+        mutex: true, //互斥模式：阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
+        order: "list", //音频循环顺序（'list'：顺序, 'random'：随机）
+        preload: "auto", //预加载（'none'：不预加载, 'metadata'：元数据, 'auto'：自动）
+        listFolded: true, //列表默认折叠，开启为true
+        theme: "#ee8243", //主题颜色
+        audio: [
+          {
+            name: "『ユイカ』 - 17さいのうた。", //歌曲名称，
+            artist: "『ユイカ』", //歌曲作者，
+            url: "music/『ユイカ』 - 17さいのうた。.flac", //歌曲源文件地址
+            cover:
+              "http://p1.music.126.net/1bcwLzrrKPWcs137biKbpw==/109951167488734005.jpg?param=130y130", //歌曲封面地址
+            lrc: "singtxt/17さいのうた。 - 『ユイカ』.lrc", //歌曲的歌词文件
+            theme: "#eeeeee", //主题颜色（优先）
+          },
+          {
+            name: "Dacapo", //歌曲名称，
+            artist: "HOYO-MiX", //歌曲作者，
+            url: "/music/Da Capo.flac", //歌曲源文件地址
+            cover:
+              "http://p2.music.126.net/awzv1LpuBJiKTeB7roh_Aw==/109951168434956885.jpg?param=130y130", //歌曲封面地址
+            lrc: "singtxt/Da Capo - HOYO-MiX.lrc", //歌曲的歌词文件
+            theme: "#eeeeee", //主题颜色（优先）
+          },
+          {
+            name: "祝福", //歌曲名称，
+            artist: "YOASOBI", //歌曲作者，
+            url: "music/01.祝福.flac", //歌曲源文件地址
+            cover:
+              "https://y.qq.com/music/photo_new/T002R800x800M0000021clhD02ns8a_1.jpg", //歌曲封面地址
+            lrc: "singtxt/祝福 - YOASOBI.lrc", //歌曲的歌词文件
+            theme: "#eeeeee", //主题颜色（优先）
+          },
+          {
+            name: "TruE", //歌曲名称，
+            artist: "黄龄/HOYO-MiX", //歌曲作者，
+            url: "music/黄龄,HOYO-MiX - TruE.mp3", //歌曲源文件地址
+            cover:
+              "http://p2.music.126.net/cu9T_JCh5mt3aipWJoy03w==/109951167767293721.jpg?param=130y130", //歌曲封面地址
+            lrc: "singtxt/TruE - 黄龄,HOYO-MiX.lrc", //歌曲的歌词文件
+            theme: "#eeeeee", //主题颜色（优先）
+          },
+          {
+            name: "Regression", //歌曲名称，
+            artist: "阿云嘎/HOYO-MiX", //歌曲作者，
+            url: "music/阿云嘎,HOYO-MiX - Regression.mp3", //歌曲源文件地址
+            cover:
+              "http://p2.music.126.net/DbD08enxZN2kDFScDFxcdQ==/109951166957048928.jpg?param=130y130", //歌曲封面地址
+            lrc: "singtxt/Regression - 阿云嘎,HOYO-MiX.lrc", //歌曲的歌词文件
+            theme: "#eeeeee", //主题颜色（优先）
+          },
+          {
+            name: "One Last Kiss", //歌曲名称，
+            artist: "宇多田光", //歌曲作者，
+            url: "music/one last  kiss.mp3", //歌曲源文件地址
+            cover:
+              "http://p1.music.126.net/l3G4LigZnOxFE9lB4bz_LQ==/109951165791860501.jpg?param=130y130", //歌曲封面地址
+            lrc: "singtxt/One Last Kiss - 宇多田光.lrc", //歌曲的歌词文件
+            theme: "#eeeeee", //主题颜色（优先）
+          },
+        ],
+      });
+    </script>
+
+    <!-- api接口 -->
+    <!-- 自定义按钮 -->
+    <div class="container mt-3">
+      <img id="sing-img" height="80px;" />
+      <audio id="sing-audio" controls></audio>
+    </div>
+
+    <div
+      id="result"
+      class="container tab-content table container-fluid col-6"
+    ></div>
+
+    <!-- 新歌首发 -->
+    <div class="new_song container">
+      <div class="song_con u-margin-top">
+        <h2 class="tit">新歌首发</h2>
+        <div class="tab">
+          <a href="#">最新</a>
+          <a href="#">内地</a>
+          <a href="#">港台</a>
+          <a href="#">欧美</a>
+          <a href="#">韩国</a>
+          <a href="#">日本</a>
+        </div>
+        <ul class="song_list">
+          <li>
+            <div class="pic">
+              <a href="#"
+                ><img
+                  src="https://p1.music.126.net/BYUIoXcdJEEBkwQwUl43-Q==/109951164137325416.jpg?param=200y200"
+                  alt=""
+              /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">Lorem</a></h3>
+              <p>
+                <a href="#">vero</a>
+              </p>
+            </div>
+            <div class="time">3:01</div>
+          </li>
+          <li>
+            <div class="pic">
+              <a href="#"
+                ><img
+                  src="https://p1.music.126.net/PawOuFV2n3K_hIjLZRqYgg==/109951169025052150.jpg?param=130y130"
+                  alt=""
+              /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">祝福</a></h3>
+              <p><a href="#">祝福</a></p>
+            </div>
+            <div class="time">3:46</div>
+          </li>
+          <li class="nomargin">
+            <div class="pic">
+              <a href="#"
+                ><img
+                  src="https://p1.music.126.net/-qMscnByecEQ4XrBuec3sQ==/109951165165805968.jpg?param=130y130"
+                  alt=""
+              /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">avid</a></h3>
+              <p><a href="#">歌手</a></p>
+            </div>
+            <div class="time">2:56</div>
+          </li>
+          <li>
+            <div class="pic">
+              <a href="#"
+                ><img
+                  src="https://p1.music.126.net/aG5zqxkBRfLiV7A8W0iwgA==/109951166702962263.jpg?param=130y130"
+                  alt=""
+              /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">Regression</a></h3>
+              <p><a href="#">阿云嘎,HOYO-MiX</a></p>
+            </div>
+            <div class="time">2:21</div>
+          </li>
+          <li>
+            <div class="pic">
+              <a href="#"><img src="audio/Res.jpg" alt="" /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">avid</a></h3>
+              <p><a href="#">歌手</a></p>
+            </div>
+            <div class="time">2:12</div>
+          </li>
+          <li class="nomargin">
+            <div class="pic">
+              <a href="#"
+                ><img
+                  src="https://p1.music.126.net/JBrPa3oAkMxG3CAQkRQ83w==/109951168973212235.jpg?param=130y130"
+                  alt=""
+              /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">Comet</a></h3>
+              <p><a href="#">YOASOBI</a></p>
+            </div>
+            <div class="time">2:13</div>
+          </li>
+          <li>
+            <div class="pic">
+              <a href="#"
+                ><img
+                  src="https://p2.music.126.net/XnLAbFfmIEyHW3_mtvvKrA==/109951165416746532.jpg?param=130y130"
+                  alt=""
+              /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">One Last Kiss</a></h3>
+              <p><a href="#">宇多田ヒカル</a></p>
+            </div>
+            <div class="time">2:25</div>
+          </li>
+          <li>
+            <div class="pic">
+              <a href="#"><img src="audio/onelastkiss.jpg" alt="" /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">人类祈祷记录</a></h3>
+              <p><a href="#">Akie秋绘</a></p>
+            </div>
+            <div class="time">3:56</div>
+          </li>
+          <li class="nomargin">
+            <div class="pic">
+              <a href="#"><img src="audio/heiansenlin.jpg" alt="" /></a>
+            </div>
+            <div class="txt">
+              <h3><a href="#">黑暗森林</a></h3>
+              <p><a href="#">雲翼星辰</a></p>
+            </div>
+            <div class="time">1:46</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 排行榜 -->
+    <div class="rank container u-margin-top">
+      <div class="rank_con">
+        <h2 class="tit">排行榜</h2>
+        <ul class="rank_list">
+          <li class="list_item">
+            <h3>热门歌曲</h3>
+            <i> </i>
+            <ul class="item_del">
+              <li>
+                <div class="num">1</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">2</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">3</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="list_item two">
+            <h3>新歌</h3>
+            <i> </i>
+            <ul class="item_del">
+              <li>
+                <div class="num">1</div>
+                <div class="del_stxt">
+                  <p><a href="#">孤勇者</a></p>
+                  <p><a href="#">陈奕迅</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">2</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">3</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="list_item three">
+            <h3>流行指数</h3>
+            <i> </i>
+            <ul class="item_del">
+              <li>
+                <div class="num">1</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">2</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">3</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="list_item four">
+            <h3>欧美</h3>
+            <i> </i>
+            <ul class="item_del">
+              <li>
+                <div class="num">1</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">2</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">3</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="list_item five nomargin">
+            <h3>韩国</h3>
+            <i> </i>
+            <ul class="item_del">
+              <li>
+                <div class="num">1</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">2</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="num">3</div>
+                <div class="del_stxt">
+                  <p><a href="#">歌曲</a></p>
+                  <p><a href="#">歌手</a></p>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 引入的模块 -->
+    <script src="/js/音乐测试界面vue模块.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/代码练习/boot5的练习.js"></script>
+  </body>
+</html>

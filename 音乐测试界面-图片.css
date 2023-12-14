@@ -1,0 +1,43 @@
+#img1{
+    display:inline-block;
+    margin: 10px;
+}
+
+#img2{
+    display: inline-block;
+    margin: 10px;
+}
+
+
+#sing{
+    font-family: cursive;
+}
+
+
+
+#kongjianleft{
+    margin-left: 120px;
+}
+
+#kongjianright{
+    margin-right: 120px;
+}
+
+#huanyipi{
+    margin-right: 16px;  
+}
+
+#chicun{
+    height: 80%;
+    width: 100%;
+}
+
+#aplayer{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+#huanyipi{
+    margin-bottom: 5px;
+}

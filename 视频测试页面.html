@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/草稿5.css">
+    <link rel="shortcut icon" href="/img/网页图标.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+    <script src="新框架.js" type="text/javascript"></script>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/plyr/dist/plyr.css" />
+    <script src="/plyr/dist/plyr.polyfilled.js"></script>
+    <link rel="stylesheet" href="视频测试页面.css">
+    <title>《崩坏3》动画短片「因你而在的故事」</title>
+    </head>
+
+    <body>
+  <main>
+    <header>
+      <div class="px-3 py-2 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="http://127.0.0.1:5500/综合主页.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <img src="/img/顾客.png" class="bi me-2" width="40" height="" role="img" />
+            </a>
+<!-- 下面的class加nav-tabs有白色下划线  -->
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-justified">
+              
+              <li>
+                <a href="http://127.0.0.1:5500/综合主页.html" class="btn  nav-link text-white btn-dark" accesskey="1">
+                  <img src="/img/主页.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  主页
+                </a>
+                </button>
+              </li>
+              
+              <li>
+                <a href="http://127.0.0.1:5500/音乐测试页面.html" class="btn  nav-link text-white btn-dark" accesskey="2">
+                  <img src="/img/音乐.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  音乐
+                </a>
+              </li>
+              
+              <li>
+<!-- data-bs-toggle="tooltip" data-bs-placement="bottom" title="视频界面" 可加提示框 放class里面 -->
+                <a  href="http://127.0.0.1:5500/视频测试页面.html" class="btn  nav-link text-white btn-dark" accesskey="3">
+                  <img src="/img/上传视频_爱给网_aigei_com.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  视频
+                </a>
+              </li>
+
+              <li>
+                <a href="http://127.0.0.1:5500/帮助页面.html" class="btn  nav-link text-white btn-dark" accesskey="4">
+                  <img  src="/img/帮助.png"  class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                  帮助
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+</main>
+
+<!-- 搜索框 -->
+<div id="search" class="container mt-3"></div>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search" });
+  });
+</script>
+   
+<!-- 视频文件 -->
+<div class="container mt-3">
+  <h4 id="mingzi" class="text-center">《崩坏3》动画短片「因你而在的故事」</h4>
+</div>
+<div class="container mt-2">
+<video id="player"  playsinline controls data-poster="/img/6.png">
+  <source src="video/Because of You.mp4" type="video/mp4" />
+  <source src="video/Because of You.mp4" size="1080" type="video/mp4" />
+  <source src="video/Because of You.mp4" size="720" type="video/mp4" />
+  <source src="video/Because of You.mp4" size="480" type="video/mp4" />
+</div>
+  <!-- 字幕 -->
+  <track kind="captions" label="中文字幕"
+         src="/singtxt/17さいのうた。 - 『ユイカ』.lrc" srclang="zh" default="default"/>
+  <track kind="captions" label="英文字幕"
+         src="/singtxt/Da Capo - HOYO-MiX.lrc" srclang="en"/>
+</video>
+
+<!-- 播放器设置 -->
+<script>const player = new Plyr('#player', {
+  i18n:{
+    restart: '重播', rewind: '倒退 {seektime} 秒',
+    fastForward: '快进 {seektime} 秒',
+    play: '播放', pause: '暂停',
+    seek: '寻找',
+    played: '已播放',
+    buffered: '缓存',
+    currentTime: '目前时间', duration: '总共时间',
+    volume: '音量', mute: '静音', unmute: '取消静音',
+    captions: '字幕语言',
+    enableCaptions: '开启字幕', disableCaptions: '关闭字幕',
+    enterFullscreen: '全屏', exitFullscreen: '退出全屏',
+    frameTitle: '{title} 播放器',
+    settings: '设定',
+    speed: '播放速率', normal: '正常',
+    quality: '画质',
+    loop: '循环播放',
+    start: '开始', end: '结束',
+    all: '全部',
+    reset: '重置',
+    disabled: '关闭',
+    advertisement: '广告',  
+  },
+markers: {
+   enabled: true,
+   points: [
+     { time: 8, label: '开始', },
+     { time: 377, label: '片尾曲', },
+   ]
+ },
+ tooltips: { controls: true, seek: true },
+ keyboardShortcuts:{ focused: true, global: true }
+ })
+ </script>
+
+
+  </main>
+</body>
+</html>

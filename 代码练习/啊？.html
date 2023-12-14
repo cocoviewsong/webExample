@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      async
+      src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <div style="background: white; position: fixed; z-index: 999">
+      <div style="position: fixed; top: 20px">
+        <input id="input" placeholder="歌曲名" />
+        <button onclick="searchSong()">搜索</button>
+      </div>
+      <div style="position: fixed; top: 60px">
+        <img id="img" height="80px;" />
+        <span id="songsnamesp" style="position: absolute; top: 5px"></span>
+        <audio id="audio" controls></audio>
+      </div>
+    </div>
+    <table
+      id="result"
+      style="position: absolute; top: 160px; max-width: 80%"
+    ></table>
+    <div id="comments"></div>
+    <div id="lyric"></div>
+
+    <script src="啊？.js"></script>
+  </body>
+</html>

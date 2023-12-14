@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Comet",
+    "singer": "YOASOBI",
+    "album": "E-SIDE",
+    "time": "03:33",
+    "link_url": "./audio/Comet - YOASOBI.mp3",
+    "cover": "audio/comet.webp",
+    "link_lrc": "./singtxt/Comet - YOASOBI.lrc"
+  },
+  {
+    "name": "One Last Kiss",
+    "singer": "宇多田ヒカル",
+    "album": "One Last Kiss",
+    "time": "04:09",
+    "link_url": "./music/one last  kiss.mp3",
+    "cover": "audio/onelastkiss.jpg",
+    "link_lrc": "./singtxt/One Last Kiss - 宇多田光.lrc"
+  },
+  {
+    "name": "人类祈祷记录",
+    "singer": "Akie秋绘",
+    "album": "人类祈祷记录",
+    "time": "06:14",
+    "link_url": "./audio/人类祈祷记录 - Akie秋绘.mp3",
+    "cover": "audio/renleiqidaojilv.jpg",
+    "link_lrc": "./singtxt/人类祈祷记录 - Akie秋绘.lrc"
+  },
+  {
+    "name": "黑暗森林",
+    "singer": "雲翼星辰",
+    "album": "小九填词雲酱翻系列",
+    "time": "05:47",
+    "link_url": "audio/黑暗森林.mp3",
+    "cover": "audio/heiansenlin.jpg",
+    "link_lrc": "singtxt/黑暗森林（原曲：Schwarzer Regen） - 雲翼星辰.lrc"
+  },
+  {
+    "name": "Regression",
+    "singer": "阿云嘎,HOYO-MiX",
+    "album": "Regression",
+    "time": "04:04",
+    "link_url": "./music/阿云嘎,HOYO-MiX - Regression.mp3",
+    "cover": "audio/Res.jpg",
+    "link_lrc": "./singtxt/Regression - 阿云嘎,HOYO-MiX.lrc"
+  },
+  {
+    "name": "祝福",
+    "singer": "YOASOBI",
+    "album": "祝福",
+    "time": "03:16",
+    "link_url": "./music/01.祝福.flac",
+    "cover": "audio/zhufu.jpg",
+    "link_lrc": "./singtxt/祝福 - YOASOBI.lrc"
+  },
+  {
+    "name": "Da Capo",
+    "singer": "HOYO-MiX",
+    "album": "Da Capo",
+    "time": "02:14",
+    "link_url": "./music/Da Capo.flac",
+    "cover": "audio/dacapo.jpg",
+    "link_lrc": "./singtxt/Da Capo - HOYO-MiX.lrc"
+  },
+  {
+    "name": "Avid",
+    "singer": "SawanoHiroyuki[nZk]",
+    "album": "Avid / Hands Up to the Sky",
+    "time": "04:10",
+    "link_url": "./audio/SawanoHiroyuki[nZk],瑞葵 - Avid.mp3",
+    "cover": "./audio/SawanoHiroyuki[nZk],瑞葵.jpg",
+    "link_lrc": "./audio/SawanoHiroyuki[nZk],瑞葵 - Avid.txt"
+  },
+  {
+    "name": "怪物",
+    "singer": "YOASOBI",
+    "album": "怪物",
+    "time": "03:26",
+    "link_url": "./music/01. 怪物.flac",
+    "cover": "audio/guaiwu.jpg",
+    "link_lrc": "./singtxt/怪物 - YOASOBI.lrc"
+  },
+  {
+    "name": "17さいのうた。",
+    "singer": "『ユイカ』",
+    "album": "シティーポップ",
+    "time": "05:09",
+    "link_url": "./music/『ユイカ』 - 17さいのうた。.flac",
+    "cover": "audio/17.jpg",
+    "link_lrc": "./singtxt/17さいのうた。 - 『ユイカ』.lrc"
+  }
+]

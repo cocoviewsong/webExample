@@ -1,0 +1,80 @@
+html,body{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-size:cover;
+	/* 背景图片不会重复 */
+	background-repeat: no-repeat; 
+}
+
+.a1:link {color: antiquewhite;}     /* 未访问链接*/
+.a1:visited {color: aquamarine;} /* 已访问链接 */
+.a1:hover {color: seagreen;} /* 鼠标移动到链接上 */
+.a1:active {color: red;}/* 鼠标点击时 */
+.a1 {text-decoration:overline;}
+
+.m1:link {color: antiquewhite;}     /* 未访问链接*/
+.m1:visited {color: aquamarine;} /* 已访问链接 */
+.m1:hover {color: seagreen;} /* 鼠标移动到链接上 */
+.m1:active {color: red;}/* 鼠标点击时 */
+.m1 {text-decoration:overline;}
+
+body {
+    background-image: url(/img/2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    margin-top: 0px;
+}
+
+.a1 {text-decoration:overline;}
+.m1 {text-decoration:overline;}
+
+h1{
+
+	line-height: 90px;
+	color: whitesmoke;
+	font-size: 50px;
+}
+
+h2{
+	line-break: 80px;
+	font-size: 22px;
+	color: orange;
+}
+
+.btn{
+	width: 12.5rem;
+	height: 3.75rem;
+	background-color: seagreen;
+	color: white;
+	font-size: 1.5rem;
+	line-height: 3.75rem;
+	margin: 1.875rem auto;
+	border-radius: 0.625rem;
+	transition: 0.4s;
+}
+
+.btn:hover{
+	width: 18.75rem;
+	height: 6.25rem;
+	background-color: orangered;
+	line-height: 6.25rem;
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.a1{
+	font-size: 30px;
+	
+}
+
+.m1{
+	font-size: 30px;
+}

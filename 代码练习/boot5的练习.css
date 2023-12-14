@@ -1,0 +1,6 @@
+.sousuo {
+  display: inline-block;
+  margin-left: 20px;
+  background-image: url(/img/暂停.png);
+  color: rgb(143, 128, 128);
+}

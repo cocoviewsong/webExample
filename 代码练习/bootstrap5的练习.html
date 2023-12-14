@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="boot5的练习.css">
+</head>
+<body>
+    
+    <div class="container mt-3">   
+        <div class="row">
+            <div class="col-6 text-center">啊对对对1
+                <img src="/img/2.png" alt="" width="320px">
+            </div>
+            <div class="col-6 text-end">啊对对对2
+                <img src="/img/2.png" alt="" width="320px">
+            </div>
+        </div>
+    </div>
+
+    <!-- 再来一个 -->
+    <div class="container text-center">
+        <div class="row">
+          <div class="col-3">
+          </div>
+          <div class="col-6">
+            歌单推荐
+          </div>
+          <div class="col-3">
+            换一批
+          </div>
+        </div>
+    </div>
+
+<!-- 这是啥 -->
+<div class="container text-center">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        1 of 3
+      </div>
+      <div class="col-md-auto">
+        Variable width content
+      </div>
+      <div class="col col-lg-2">
+        3 of 3
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col-md-auto">
+        Variable width content
+      </div>
+      <div class="col col-lg-2">
+        3 of 3
+      </div>
+    </div>
+  </div>
+
+<!-- api接口 -->
+<div class="container nav navbar-expand-sm">
+  <form class="row">
+    <input id="sing-search" type="text" class="d-block container-fluid" placeholder="搜索"/>
+  </form>
+    <button onclick="searchSong()" class="sousuo btn btn-dark">搜索</button>
+</div>
+
+<!-- 自定义按钮 -->
+<div class="container mt-3">
+<img id="sing-img" height="80px;">
+<audio id="sing-audio" controls></audio>
+</div>
+
+<div id="result" class="container tab-content table container-fluid col-6">
+</div>
+<button>
+  <img id="StartAndStop" src='/img/播放.png' width='32px'>
+</button>
+
+<style>
+  /* body{
+    background-color: rgba(255,255,255,0.5);
+  } */
+  #gequbiaoge{
+    width: 100%;
+    /* color: black; */
+    /* border: 1px solid black; */
+  }
+  /* #sing-gequname{
+    font-size: 14px;
+    color: orange;
+  }
+  #sing-geshou{
+    font-size: 14px;
+    background-color: red;
+    color: red;
+  }
+
+  #bofanganniu {
+  position: relative;
+  background-color: orangered;
+  border: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 130px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+  #bofanganniu:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  #bofanganniu:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  } */
+</style>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="CSS调整.JS"></script>
+</body>
+</html>

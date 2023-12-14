@@ -1,0 +1,65 @@
+html,body{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 0px;
+    background-image: url(/img/3.png);
+    background-size:cover;
+	/* 背景图片不会重复 */
+	background-repeat: no-repeat; 
+}
+
+
+h2{
+    text-align: center;
+    color: orange;
+}
+
+.v1{
+    display: block;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.v2{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    margin: auto;
+}
+
+.biyelvxing{
+    text-align: center;
+}
+
+.aotuo{
+    text-align: center;
+}
+
+p{
+    color: orange;
+    height: 0%;
+}
+
+.fanhui1 {text-decoration:overline;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	width: 100%;
+	transform: translateY(-50%);
+}

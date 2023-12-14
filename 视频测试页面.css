@@ -1,0 +1,9 @@
+:root{
+    --plyr-color-main: red;
+    --plyr-font-smoothing:true;
+    --plyr-line-height:10px;
+  }
+
+  #mingzi{
+    font-family: cursive;
+  }

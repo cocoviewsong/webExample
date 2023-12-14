@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+        <div class="container nav navbar-expand-sm mt-3">
+            <form class="row">
+                <input id="sing-search" type="text" placeholder="搜索">
+            </form>
+                <button onclick="searchSong()" class="sousuo btn btn-dark">搜索</button>
+        </div>
+
+        <div class="container mt-3">
+        <img id="sing-img" height="80px;">
+        <audio id="sing-audio" controls></audio>
+        </div>
+        <table id="result" class="tab">我</table>
+<script>
+
+var URL="http://127.0.0.1:3000/search?keywords=海阔天空";
+
+function searchSong(){
+    $.get(URL,function(data){
+        var song =data.result.songs;
+        for(var i=0;i<songs.length;i++){
+            var id=song[i].id;
+            document.getElementById("result").innerHTML=1+1;
+        }
+
+        // document.getElementById("result").innerHTML=song;
+    }
+    )
+    };
+
+</script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+</html>

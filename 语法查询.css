@@ -1,0 +1,14 @@
+p{
+    /* 简写c */
+    color: #000;
+    /* 字体大小fos */
+    font-size: large;
+    /* 背景颜色 bgc */
+    background-color: #fff;
+    /* 加粗fwb */
+    font-weight: bold;
+    /* 斜体fsi */
+    font-style: italic;
+    /* 下划线tdu */
+    text-decoration: underline;
+}

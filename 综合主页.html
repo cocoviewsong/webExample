@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>主页</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/img/网页图标.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/综合主页.css" rel="stylesheet">
+  <link rel="stylesheet" href="玩牌.css">
+  <link rel="stylesheet" href="css/pace-theme-default.min.css">
+  <!-- 搜索 -->
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/css/单击弹出文字.css"> -->
+
+</head>
+
+<body>
+
+<main>
+  <header>
+    <div class="px-3 py-2 bg-dark text-muted">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="http://127.0.0.1:3001/综合主页.html" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-muted text-decoration-none">
+            <img src="/img/顾客.png" class="bi me-2" width="40" height="" role="img" />
+          </a>
+
+          <ul class="nav  col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-justified">
+            <li>
+              <!-- <button class="btn btn-sm  btn-dark"> -->
+              <a href="http://127.0.0.1:3001/综合主页.html" class="btn  nav-link text-white btn-dark" accesskey="1">
+                <img src="/img/主页.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                主页
+              </a>
+            </li>
+
+            <li>
+              <!-- <button class="btn btn-sm  btn-dark"> -->
+              <a href="http://127.0.0.1:3001/音乐测试页面.html" class="btn  nav-link text-white btn-dark" accesskey="2">
+                <img src="/img/音乐.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                音乐
+              </a>
+            </li>
+            
+            <li>
+              <!-- <button class="btn btn-sm  btn-dark"> -->
+              <a  href="http://127.0.0.1:3001/视频测试页面.html" class="btn  nav-link text-white btn-dark" accesskey="3">
+                <img src="/img/上传视频_爱给网_aigei_com.png" class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                视频
+              </a>
+            </li>
+            <li>
+              <!-- <button class="btn btn-sm  btn-dark"> -->
+              <a href="http://127.0.0.1:3001/帮助页面.html" class="btn  nav-link text-white btn-dark" accesskey="4">
+                <img  src="/img/帮助.png"  class="bi d-block mx-auto mb-1" width="24" height="24"/>
+                帮助
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </header>
+</main>
+
+<!-- 搜索栏 -->
+<div id="search" class="container mt-3" ></div>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: "#search" });
+  });
+</script>
+
+  <!-- 摆牌 -->
+  <div class="wanpai container mt-5">
+      <div> <a href="http://127.0.0.1:3001/帮助页面.html">
+      <img class="wanpai1" src="/wepb/0.webp" alt="魔术师"/>
+      <img class="wanpai2" src="/wepb/1.webp"/>
+      <img class="wanpai3" src="/wepb/2.webp"/>
+      <img class="wanpai4" src="/wepb/3.webp"/>
+      <img class="wanpai5" src="/wepb/4.webp"/>
+      <img class="wanpai6" src="/wepb/5.webp"/>
+      <img class="wanpai7"src="/wepb/6.webp"/>
+      <img class="wanpai8"src="/wepb/7.webp"/>
+      <img class="wanpai9"src="/wepb/8.webp"/>
+      <img class="wanpai10"src="/wepb/9.webp"/>
+      <img class="wanpai11"src="/wepb/10.webp"/>
+      <img class="wanpai12"src="/wepb/11.webp"/>
+      <img class="wanpai13"src="/wepb/12.webp" alt="">
+      <img class="wanpai14"src="wepb/13.webp" alt="">
+      <img class="wanpai15"src="wepb/14.webp" alt="">
+      <img class="wanpai16"src="wepb/15.webp" alt="">
+      <img class="wanpai17"src="wepb/16.webp" alt=""></a></div>
+      
+      <div><a href="#">
+      <img class="wanpai18"src="wepb/17.webp" alt=""></a></div>
+  </div>
+
+<div class="container text-dark mt-5 pt-5 zhuye">
+  <br><br><br><br><br><br><br>
+  <h1 class="display-4 zhuye">Hello</h1><br>
+  <p class="wenzi1 lead zhuye ">This is a free video music site.
+    <br>You can try the <kbd>number 1234 on the ALT+ main keyboard</kbd>.
+  </p>
+</div>
+
+
+<!-- 尾部 -->
+<div class=" text-center bg-dark  py-3 footer">
+  <a class="text-dark text-decoration-none  text-muted " href="#">加入我们  |</a>
+  <a class="text-dark text-decoration-none text-muted " href="#">联系站长</a>
+</div>
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/pace.min.js"></script>
+<!-- anime -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!-- 搜索 -->
+<script src="/pagefind/pagefind-ui.js" type="text/javascript"></script>
+<!-- <script src="/js/单击弹出文字.js"></script> -->
+</body>
+</html>

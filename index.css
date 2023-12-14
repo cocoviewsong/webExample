@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.container #MusicPlayer{
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+.container .btn{
+    display: block;
+    margin: 0 auto;
+}
+.container .lrc{
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+.container .lrc #ullrc{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    transition: 0.3s all ease;
+    margin: 0;
+}
+/*歌词普通样式*/
+.container .lrc #ullrc li{
+    height: 35px;
+    line-height: 35px;
+    font-size: 1em;
+    color: black;
+    font-weight: normal;
+    transition: .3s all ease;/*一定要加上不然看着突兀*/
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+}
+/*动态歌词样式*/
+.container .lrc #ullrc li.active{ 
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+}
